@@ -71,6 +71,10 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
+            this.확대ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.축소ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.확대하기축소하기기본ㄱToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -314,6 +318,10 @@
             // 
             // 확대하기축소하기ToolStripMenuItem
             // 
+            this.확대하기축소하기ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.확대ToolStripMenuItem,
+            this.축소ToolStripMenuItem,
+            this.확대하기축소하기기본ㄱToolStripMenuItem});
             this.확대하기축소하기ToolStripMenuItem.Name = "확대하기축소하기ToolStripMenuItem";
             this.확대하기축소하기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.확대하기축소하기ToolStripMenuItem.Text = "확대하기/축소하기";
@@ -382,11 +390,43 @@
             this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 16);
             this.toolStripProgressBar1.Value = 50;
             // 
+            // 확대ToolStripMenuItem
+            // 
+            this.확대ToolStripMenuItem.Name = "확대ToolStripMenuItem";
+            this.확대ToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.확대ToolStripMenuItem.Text = "확대";
+            this.확대ToolStripMenuItem.Click += new System.EventHandler(this.확대ToolStripMenuItem_Click);
+            // 
+            // 축소ToolStripMenuItem
+            // 
+            this.축소ToolStripMenuItem.Name = "축소ToolStripMenuItem";
+            this.축소ToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.축소ToolStripMenuItem.Text = "축소";
+            this.축소ToolStripMenuItem.Click += new System.EventHandler(this.축소ToolStripMenuItem_Click);
+            // 
+            // 확대하기축소하기기본ㄱToolStripMenuItem
+            // 
+            this.확대하기축소하기기본ㄱToolStripMenuItem.Name = "확대하기축소하기기본ㄱToolStripMenuItem";
+            this.확대하기축소하기기본ㄱToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.확대하기축소하기기본ㄱToolStripMenuItem.Text = "확대하기/축소하기 기본값 복원";
+            this.확대하기축소하기기본ㄱToolStripMenuItem.Click += new System.EventHandler(this.확대하기축소하기기본ㄱToolStripMenuItem_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("궁서체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox1.Location = new System.Drawing.Point(0, 27);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.textBox1.Size = new System.Drawing.Size(800, 398);
+            this.textBox1.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.Name = "Form1";
@@ -445,6 +485,10 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar1;
+        private System.Windows.Forms.ToolStripMenuItem 확대ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 축소ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 확대하기축소하기기본ㄱToolStripMenuItem;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
