@@ -413,7 +413,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("궁서체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox1.Font = new System.Drawing.Font("돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBox1.Location = new System.Drawing.Point(0, 27);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
