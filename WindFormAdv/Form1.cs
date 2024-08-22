@@ -16,5 +16,10 @@ namespace WindFormAdv
         {
             InitializeComponent();
         }
+
+        private void 자동줄바꿈ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
